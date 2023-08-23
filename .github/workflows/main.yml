@@ -1,0 +1,19 @@
+name: Data Processing Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - feat1
+      - feat2
+
+jobs:
+  data_processing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout le code
+        uses: actions/checkout@v2
+      
+      # Méthode 1
+      - name: Télécharger les données depuis une URL (Méthode 2)
+        run: echo 'ali'
